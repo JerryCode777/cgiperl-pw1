@@ -1,0 +1,5 @@
+docker build -f dockerfile5.txt -t iminidebjr .
+docker run -d -p 8184:80 -p 2202:22 --name cminidebjr iminidebjr
+
+texto:
+La UNSA es una de las universidades más importantes del sur del Perú. Estudiar en la UNSA me ha permitido acceder a una formación académica de calidad, gracias a sus destacados docentes. Además, la UNSA cuenta con infraestructura moderna que facilita el aprendizaje de sus estudiantes. Estoy orgulloso de ser parte de la comunidad estudiantil de la UNSA, una institución que promueve la investigación y el desarrollo tecnológico.

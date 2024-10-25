@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Buscar y Reemplazar</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+
+	<div class="header">
+	  <h2>Laboratorio: Buscar y Reemplazar Palabras</h2>
+	  <p class="description">Formulario donde se puede ingresar un párrafo, buscar una palabra y reemplazarla por otra a través del método GET en un CGI Perl.</p>
+	</div>
+	
+	<div class="content">
+	
+		<div class="container">
+			<form action="cgi-bin/reemplazar.pl" method="get">
+				<fieldset>
+					<legend>Buscar y Reemplazar:</legend>
+					<div class="row">
+						<div class="col-25">
+							<label for="paragraph">Párrafo:</label>
+						</div>
+						<div class="col-75">
+							<textarea id="paragraph" name='paragraph' placeholder="Escribe el párrafo aquí." rows="4" cols="50"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="search">Buscar:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="search" name='search' placeholder="Palabra a buscar">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="replace">Reemplazar por:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="replace" name='replace' placeholder="Palabra por la que se reemplaza">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<input type="submit" value="Reemplazar">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+		<p class="footer links">
+			<a href="https://validator.w3.org/#validate_by_input" class="image-link" target="_blank">
+    			<img style="border:0;width:88px;height:31px" src="img/W3C_HTML5_certified.png" alt="Markup Validation" />
+    		</a>
+			<a href="https://jigsaw.w3.org/css-validator/#validate_by_input" class="image-link" target="_blank">
+    			<img style="border:0;width:88px;height:31px" src="img/Valid_CSS_(blue).svg.png" alt="CSS Validation" />
+    		</a>
+    	</p>
+		
+		<footer class="footer">		
+	  		Huaynacho Mango, Jerry Anderson &copy; 2024/10/24 - Programación Web Lab. Grupo Z.	  		
+		</footer>
+		
+	</div>
+	
+</body>
+</html>
